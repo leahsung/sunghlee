@@ -1,5 +1,868 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> You R. Name </title> <meta name="author" content="You R. Name"> <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. "> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/al-folio/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/al-folio/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/al-folio/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/al-folio/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/al-folio/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://alshedivat.github.io/al-folio/"> <script src="/al-folio/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script> <link defer rel="stylesheet" href="/al-folio/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
-    initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/al-folio/">about <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/al-folio/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/al-folio/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/al-folio/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/al-folio/repositories/">repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/al-folio/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/al-folio/teaching/">teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/al-folio/people/">people </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/al-folio/books/">bookshelf</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/al-folio/blog/">blog</a> </div> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> <span class="font-weight-bold">You</span> R. Name </h1> <p class="desc"><a href="#">Affiliations</a>. Address. Contacts. Motto. Etc.</p> </header> <article> <div class="profile float-right"> <figure> <picture> <source class="responsive-img-srcset" srcset="/al-folio/assets/img/prof_pic-480.webp 480w,/al-folio/assets/img/prof_pic-800.webp 800w,/al-folio/assets/img/prof_pic-1400.webp 1400w," type="image/webp" sizes="(min-width: 930px) 270.0px, (min-width: 576px) 30vw, 95vw"> <img src="/al-folio/assets/img/prof_pic.jpg?974957d202f671e4fa6700c04e68deae" class="img-fluid z-depth-1 rounded" width="100%" height="auto" alt="prof_pic.jpg" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </source></picture> </figure> <div class="more-info"> <p>555 your office number</p> <p>123 your address street</p> <p>Your City, State 12345</p> </div> </div> <div class="clearfix"> <p>Write your biography here. Tell the world about yourself. Link to your favorite <a href="http://reddit.com" rel="external nofollow noopener" target="_blank">subreddit</a>. You can put a picture in, too. The code is already in, just name your picture <code class="language-plaintext highlighter-rouge">prof_pic.jpg</code> and put it in the <code class="language-plaintext highlighter-rouge">img/</code> folder.</p> <p>Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing <code class="language-plaintext highlighter-rouge">profile</code> property of the YAML header of your <code class="language-plaintext highlighter-rouge">_pages/about.md</code>. Edit <code class="language-plaintext highlighter-rouge">_bibliography/papers.bib</code> and Jekyll will render your <a href="/al-folio/publications/">publications page</a> automatically.</p> <p>Link to your social media connections, too. This theme is set up to use <a href="https://fontawesome.com/" rel="external nofollow noopener" target="_blank">Font Awesome icons</a> and <a href="https://jpswalsh.github.io/academicons/" rel="external nofollow noopener" target="_blank">Academicons</a>, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.</p> </div> <h2> <a href="/al-folio/news/" style="color: inherit">news</a> </h2> <div class="news"> <div class="table-responsive"> <table class="table table-sm table-borderless"> <tr> <th scope="row" style="width: 20%">Jan 15, 2016</th> <td> A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"> </td> </tr> <tr> <th scope="row" style="width: 20%">Nov 07, 2015</th> <td> <a class="news-title" href="/al-folio/news/announcement_2/">A long announcement with details</a> </td> </tr> <tr> <th scope="row" style="width: 20%">Oct 22, 2015</th> <td> A simple inline announcement. </td> </tr> </table> </div> </div> <h2> <a href="/al-folio/blog/" style="color: inherit">latest posts</a> </h2> <div class="news"> <div class="table-responsive" style="max-height: 60vw"> <table class="table table-sm table-borderless"> <tr> <th scope="row" style="width: 20%">Mar 26, 2025</th> <td> <a class="news-title" href="/al-folio/blog/2025/plotly/">a post with plotly.js</a> </td> </tr> <tr> <th scope="row" style="width: 20%">Dec 04, 2024</th> <td> <a class="news-title" href="/al-folio/blog/2024/photo-gallery/">a post with image galleries</a> </td> </tr> <tr> <th scope="row" style="width: 20%">May 14, 2024</th> <td> <a class="news-title" href="https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/" target="_blank" rel="external nofollow noopener">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</a> <svg width="2rem" height="2rem" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"> <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path> </svg> </td> </tr> </table> </div> </div> <h2> <a href="/al-folio/publications/" style="color: inherit">selected publications</a> </h2> <div class="publications"> <ol class="bibliography"><li> <div class="row"> <div class="col col-sm-2 abbr"> <abbr class="badge rounded w-100"> <a href="https://journals.aps.org/" rel="external nofollow noopener" target="_blank">PhysRev</a> </abbr> </div> <div id="PhysRev.47.777" class="col-sm-8"> <div class="title">Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?</div> <div class="author"> <em>A. Einstein<sup>*†</sup></em>, <a href="https://en.wikipedia.org/wiki/Boris_Podolsky" rel="external nofollow noopener" target="_blank">B. Podolsky<sup>*</sup></a>, and <a href="https://en.wikipedia.org/wiki/Nathan_Rosen" rel="external nofollow noopener" target="_blank">N. Rosen<sup>*</sup></a> <i class="fa-solid fa-circle-info ml-1" data-toggle="popover" data-placement="top" data-html="true" data-content="* Example use of superscripts&lt;br&gt;† Albert Einstein"> </i> </div> <div class="periodical"> <em>Phys. Rev.</em>, New Jersey. <em>More Information</em> can be <a href="https://github.com/alshedivat/al-folio/" rel="external nofollow noopener" target="_blank">found here</a> , May 1935 </div> <div class="periodical"> </div> <div class="links"> <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a> <a href="https://doi.org/10.1103/PhysRev.47.777" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a> <a href="/al-folio/assets/pdf/example_pdf.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a> <a href="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Video</a> </div> <div class="badges"> <span class="altmetric-embed" data-badge-type="2" data-badge-popover="right" data-altmetric-id="248277"></span> <span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRev.47.777" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span> <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=qc6CJjYAAAAJ&amp;citation_for_view=qc6CJjYAAAAJ:qyhmnyLat1gC" aria-label="Google Scholar link" role="button" rel="external nofollow noopener" target="_blank"> <img src="https://img.shields.io/badge/scholar-N/A-4285F4?logo=googlescholar&amp;labelColor=beige" alt="N/A Google Scholar citations"> </a> <a href="https://inspirehep.net/literature/3255" aria-label="Inspirehep link" role="button" rel="external nofollow noopener" target="_blank"> <img src="https://img.shields.io/badge/inspire-4.5K-001628?logo=inspire&amp;logoColor=001628&amp;labelColor=beige" alt="4.5K InspireHEP citations"> </a> </div> <div class="abstract hidden"> <p>In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.</p> </div> </div> </div> </li></ol> </div> <div class="social"> <div class="contact-icons"> <a href="mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D" title="email"><i class="fa-solid fa-envelope"></i></a> <a href="https://inspirehep.net/authors/1010907" title="Inspire HEP" rel="external nofollow noopener" target="_blank"><i class="ai ai-inspire"></i></a> <a href="/al-folio/feed.xml" title="RSS Feed"><i class="fa-solid fa-square-rss"></i></a> <a href="https://scholar.google.com/citations?user=qc6CJjYAAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a> <a href="https://www.alberteinstein.com/" title="Custom Social" rel="external nofollow noopener" target="_blank"> <img src="https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png" alt="Custom Social"> </a> </div> <div class="contact-note">You can even add a little note about which of these is the best way to reach you. </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2025 You R. Name. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/al-folio/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/al-folio/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/al-folio/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/al-folio/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/al-folio/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/al-folio/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/al-folio/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/al-folio/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/al-folio/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/al-folio/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
-    addBackToTop();
-  </script> <script type="module" src="/al-folio/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/al-folio/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/al-folio/assets/js/search-data.js"></script> <script src="/al-folio/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>
+<div class="footer-content">
+            <div class="social-links">
+                <a href="https://linkedin.com/in/lena-sunghyun-lee"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#"><i class="fas fa-graduation-cap"></i> Academia.edu</a>
+                <a href="#"><i class="fab fa-researchgate"></i> ResearchGate</a>
+                <a href="#"><i class="fab fa-orcid"></i> ORCID</a>
+                <a href="#"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+            <p>&copy; 2025 Sung Hyun Lee. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity:         <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            
+            <div class="cv-section">
+                <h3>Education</h3>
+                <div class="cv-item">
+                    <div class="cv-date">Aug 2022 - Present</div>
+                    <div class="cv-title">Ph.D. in The Media School</div>
+                    <div class="cv-institution">Indiana University, Bloomington, IN, USA</div>
+                    <div class="cv-description">
+                        Advisor: Dr. John A. Velez (The Media School, Chair), Dr. Elizabeth Kaziunas<br>
+                        Minor: HCI/d in Luddy School of Informatics<br>
+                        Committee: Dr. Andrew Weaver, Dr. Melanie A. Sarge (The Media School)<br>
+                        Dissertation Topic: TBD
+                    </div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">Aug 2020 - Apr 2022</div>
+                    <div class="cv-title">M.A. in The Media School</div>
+                    <div class="cv-institution">Indiana University, Bloomington, IN, USA</div>
+                    <div class="cv-description">
+                        Thesis: "The effect of narrative structure and construal level on users' brand attitude and advocacy with credibility as a moderator on Instagram"<br>
+                        Committee: Dr. John A. Velez and Dr. Sung-Un Yang (Co-Chairs), Dr. Melanie A. Sarge
+                    </div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">Jan 2011 - Mar 2012</div>
+                    <div class="cv-title">MBA in the College of Business</div>
+                    <div class="cv-institution">Korea Advanced Institute of Science & Technology (KAIST), Seoul, ROK</div>
+                    <div class="cv-description">
+                        Program: Information Technology and Media Industry<br>
+                        Certificated the strategic entertainment and media management summer program in Marshall Business School, University of Southern California - Los Angeles, CA, USA
+                    </div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">Feb 2002 - Jul 2007</div>
+                    <div class="cv-title">B.A. in Mass Communication and Korean Literature (Double Major)</div>
+                    <div class="cv-institution">Sogang University, Seoul, ROK</div>
+                    <div class="cv-description">Exchange student program: University of Pennsylvania - Philadelphia, PA, USA</div>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h3>Professional Experience</h3>
+                <div class="cv-item">
+                    <div class="cv-date">Oct 2015 - Jul 2020</div>
+                    <div class="cv-title">Project Manager & CX Strategic Designer</div>
+                    <div class="cv-institution">CJ LIVE CITY, Seoul, Republic of Korea</div>
+                    <div class="cv-description">Led US$1.5 billion project to develop an offline entertainment platform on 330,578m2 of land. Designed trans-platform connected experiences from online to offline with ride attractions and managed budgets. Developed innovative walk-through attractions combining virtual reality with physical activity for immersive visitor experiences using gamification methods.</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">Jan 2012 - Sep 2015</div>
+                    <div class="cv-title">Sr. Brand Marketing Analyst</div>
+                    <div class="cv-institution">CJ Corporation, Seoul, Republic of Korea</div>
+                    <div class="cv-description">Consulted branding strategies for CJ Group's entertainment business including 15 television channels, ten music labels, film investment & distribution, and multiplex movie theaters. Developed on-site branding strategy for KCON, the biggest Hallyu Convention & Show that expanded into eight countries.</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">Oct 2007 - Jan 2011</div>
+                    <div class="cv-title">News Reporter</div>
+                    <div class="cv-institution">The Electronic Times, Seoul, Republic of Korea</div>
+                    <div class="cv-description">Built experience at Korea's most reputable daily newspaper focused on innovative economics and industry. Reported more than 3,500 short articles and 135 features. Specialized in investigative reporting on "Digital Aging" (2010) and "Election-Social media viral effect" (2009).</div>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h3>Awards and Honors</h3>
+                <div class="cv-item">
+                    <div class="cv-date">2025</div>
+                    <div class="cv-title">Kern Scholarship for Innovation in Journalism</div>
+                    <div class="cv-institution">Indiana University ($2,200)</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">2024</div>
+                    <div class="cv-title">Cushman Memorial Fund & Top-rated admitted Ph.D. program</div>
+                    <div class="cv-institution">Indiana University ($500)</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">2022-2027</div>
+                    <div class="cv-title">Scott C. Schurz Journalism Scholarship</div>
+                    <div class="cv-institution">Indiana University ($2,500)</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">2012</div>
+                    <div class="cv-title">Research Analyst of the Month</div>
+                    <div class="cv-institution">CJ Corporation, Seoul, Republic of Korea</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">2008, 2010</div>
+                    <div class="cv-title">Reporter of the Month (twice)</div>
+                    <div class="cv-institution">The Electronic Times, Seoul, Republic of Korea</div>
+                </div>
+            </div>
+
+            <p style="margin-top: 2rem;"><a href="#" style="color: var(--global-theme-color); text-decoration: none; font-weight: 600;"><i class="fas fa-download"></i> Download Full CV (PDF)</a></p>
+        </section><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sung Hyun Lee - Assistant Professor Candidate</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --global-bg-color: #ffffff;
+            --global-code-bg-color: #ecf0f1;
+            --global-text-color: #000000;
+            --global-text-color-light: #828282;
+            --global-theme-color: #b509ac;
+            --global-hover-color: #b509ac;
+            --global-footer-bg-color: #424242;
+            --global-footer-text-color: #e8e8e8;
+            --global-footer-link-color: #ffffff;
+            --global-distill-app-color: #828282;
+            --global-divider-color: #424242;
+            --global-card-bg-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--global-text-color);
+            background-color: var(--global-bg-color);
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .profile-section {
+            background: var(--global-bg-color);
+            padding: 3rem 0 2rem 0;
+            border-bottom: 1px solid var(--global-divider-color);
+            margin-bottom: 0;
+        }
+
+        .profile-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+
+        .profile-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .profile-text h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 0.5rem;
+            color: var(--global-text-color);
+        }
+
+        .profile-text .title {
+            font-size: 1.2rem;
+            color: var(--global-text-color-light);
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .profile-text .description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--global-text-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--global-text-color-light);
+        }
+
+        .contact-item i {
+            color: var(--global-theme-color);
+            width: 16px;
+        }
+
+        nav {
+            background: var(--global-bg-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--global-divider-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--global-text-color);
+            font-weight: 400;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--global-hover-color);
+        }
+
+        nav a.active {
+            color: var(--global-theme-color);
+            font-weight: 500;
+        }
+
+        nav a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 2px;
+            background-color: var(--global-theme-color);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: var(--global-card-bg-color);
+            margin-bottom: 3rem;
+            padding: 2.5rem;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--global-text-color);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            font-weight: 400;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--global-theme-color);
+        }
+
+        h3 {
+            color: var(--global-text-color);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--global-text-color);
+            line-height: 1.7;
+        }
+
+        .research-interests {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .interest-card {
+            background: var(--global-code-bg-color);
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--global-theme-color);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .interest-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .publication {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--global-code-bg-color);
+            border-radius: 6px;
+            border-left: 4px solid var(--global-theme-color);
+        }
+
+        .publication-title {
+            font-weight: 600;
+            color: var(--global-text-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .publication-details {
+            color: var(--global-text-color-light);
+            font-style: italic;
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .publication-abstract {
+            color: var(--global-text-color);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .cv-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .cv-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: var(--global-code-bg-color);
+            border-radius: 6px;
+            border-left: 4px solid var(--global-theme-color);
+        }
+
+        .cv-date {
+            font-weight: 600;
+            color: var(--global-theme-color);
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .cv-title {
+            font-weight: 600;
+            color: var(--global-text-color);
+            margin-bottom: 0.3rem;
+        }
+
+        .cv-institution {
+            color: var(--global-text-color-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .cv-description {
+            color: var(--global-text-color);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .teaching-course {
+            background: var(--global-code-bg-color);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--global-theme-color);
+        }
+
+        .course-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .course-title {
+            font-weight: 600;
+            color: var(--global-text-color);
+            font-size: 1.2rem;
+        }
+
+        .course-details {
+            color: var(--global-text-color-light);
+            font-size: 0.9rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: var(--global-footer-text-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            background: rgba(255,255,255,0.1);
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .social-links a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: var(--global-footer-bg-color);
+            color: var(--global-footer-text-color);
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Dark mode toggle */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--global-theme-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: all 0.2s ease;
+            z-index: 1000;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        /* Dark mode styles */
+        [data-theme="dark"] {
+            --global-bg-color: #1a1a1a;
+            --global-text-color: #e8e8e8;
+            --global-text-color-light: #a0a0a0;
+            --global-card-bg-color: #2a2a2a;
+            --global-code-bg-color: #3a3a3a;
+            --global-divider-color: #404040;
+        }
+
+        @media (max-width: 768px) {
+            .profile-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 0 1rem;
+            }
+
+            .profile-text h1 {
+                font-size: 2.2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 1rem;
+                gap: 1rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            .research-interests {
+                grid-template-columns: 1fr;
+            }
+
+            .course-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .theme-toggle {
+                top: 10px;
+                right: 10px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-text h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body data-theme="light">
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
+    <div class="profile-section">
+        <div class="profile-content">
+            <img src="https://via.placeholder.com/200/b509ac/ffffff?text=SHL" alt="Sung Hyun Lee Profile Photo" class="profile-img">
+            <div class="profile-text">
+                <h1>Sung Hyun Lee</h1>
+                <div class="title">Ph.D. Candidate | The Media School, Indiana University</div>
+                <div class="description">
+                    I am currently investigating human-AI communication and HCI/d as a PhD candidate in The Media School at Indiana University. Previously worked as strategic branding manager/designer, focusing on user behavior and storytelling in the Korean entertainment industry. My research bridges theoretical frameworks with practical applications in digital media and entertainment.
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>sunghlee@iu.edu</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>775-360-0605</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bloomington, IN</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span><a href="https://linkedin.com/in/lena-sunghyun-lee" style="color: inherit; text-decoration: none;">LinkedIn</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my academic website. I am a Ph.D. candidate in The Media School at Indiana University, where I investigate human-AI communication and human-computer interaction/design (HCI/d). My interdisciplinary research bridges media psychology, artificial intelligence, and user experience design to understand how people interact with and perceive emerging technologies in entertainment and communication contexts.</p>
+            
+            <p>Before pursuing my doctoral studies, I brought valuable industry experience from the Korean entertainment sector, where I worked as a strategic branding manager and designer for CJ ENM, focusing on user behavior analysis and storytelling. This unique combination of academic rigor and industry insight informs my research approach, allowing me to examine both theoretical frameworks and practical applications of communication technologies.</p>
+
+            <p>My dissertation work explores collaborative dialogue with generative AI for problem-solving, contributing to our understanding of human-machine communication processes. I am actively seeking a tenure-track position where I can continue advancing knowledge in media psychology and human-AI interaction while mentoring the next generation of scholars in communication and media studies.</p>
+        </section>
+
+        <section id="research">
+            <h2>Research Interests</h2>
+            <div class="research-interests">
+                <div class="interest-card">
+                    <h3>Media Psychology</h3>
+                    <p>Investigating psychological processes underlying media consumption and user behavior in digital environments. My work examines how individuals perceive, process, and respond to various forms of media content, with particular attention to emotional responses and engagement patterns.</p>
+                </div>
+                <div class="interest-card">
+                    <h3>Human-Machine Communication</h3>
+                    <p>Exploring the dynamics of interaction between humans and artificial intelligence systems. I study how people communicate with AI entities, the factors that influence trust and acceptance, and the implications for collaborative problem-solving in various contexts.</p>
+                </div>
+                <div class="interest-card">
+                    <h3>Interactive Media & User Experience</h3>
+                    <p>Examining user experience design principles in interactive media platforms, including gaming, social media, and entertainment technologies. My research addresses how design choices influence user behavior and engagement across different platforms.</p>
+                </div>
+                <div class="interest-card">
+                    <h3>Entertainment Industry Studies</h3>
+                    <p>Analyzing communication patterns and user behaviors in entertainment contexts, particularly focusing on Korean pop culture (Hallyu), gaming platforms like Twitch, and cross-cultural media consumption patterns.</p>
+                </div>
+            </div>
+
+            <h3>Current Research Projects</h3>
+            <ul>
+                <li><strong>Human-AI Collaborative Dialogue:</strong> Investigating how users engage in problem-solving through collaborative dialogue with generative AI systems</li>
+                <li><strong>Trust in AI-Generated News:</strong> Examining audience perceptions of AI-generated news content across polarized issues (with J. Moon)</li>
+                <li><strong>Gaming Platform Communication:</strong> Analyzing linguistic behavior and social interaction patterns on streaming platforms like Twitch and YouTube</li>
+                <li><strong>Cross-Cultural Media Engagement:</strong> Studying the global impact of Korean entertainment content and lifestyle integration</li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            
+            <h3>Peer-Reviewed Journal Articles</h3>
+            <div class="publication">
+                <div class="publication-title">Beyond Prompt Engineering: Exploring Collaborative Dialogue with GenAI for Problem-Solving</div>
+                <div class="publication-details">Lee, S. H., Velez, J. A., & Noh, D. (2025). Cyberpsychology, Behavior, and Social Networking</div>
+                <p class="publication-abstract">This study investigates how users engage in collaborative problem-solving through dialogue with generative AI systems, moving beyond simple prompt engineering to examine sustained interactive communication patterns.</p>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Trolling is in the eye of the beholder: Perceptions of trolling motivations in others predict vigilantism in video games</div>
+                <div class="publication-details">Velez, J. A., Yoo, H., Smith, X., Lee, S. H., Lin, Y., & Chae, S. W. (2025). Communication Research</div>
+                <p class="publication-abstract">Examines how perceptions of trolling motivations influence vigilante behaviors in gaming environments, contributing to understanding of online community dynamics.</p>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Where do cross-cutting discussions happen?: Identifying cross-cutting comments on YouTube videos of political vloggers and mainstream news outlets</div>
+                <div class="publication-details">Chae, S. W., & Lee, S. H. (2024). PLOS ONE</div>
+                <p class="publication-abstract">Analyzes patterns of cross-cutting political discussions in YouTube comment sections, comparing engagement across different content types and creators.</p>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Sharing emotion while spectating video game play: Twitch users' emotional change, COVID-19 pandemic</div>
+                <div class="publication-details">Chae, S. W. & Lee, S. H. (2022). Computers in Human Behavior</div>
+                <p class="publication-abstract">Investigates emotional sharing and community building on Twitch during the COVID-19 pandemic, revealing how gaming platforms served as emotional support systems.</p>
+            </div>
+
+            <h3>Work in Progress</h3>
+            <div class="publication">
+                <div class="publication-title">Exploring the Association between Twitch Streamers' Self-identified Gender and Their Viewers' Linguistic Behavior</div>
+                <div class="publication-details">Chae, S. W., & Lee, S. H. (Manuscript in preparation)</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">Twitch vs YouTube: How synchronicity is Associated with Users' Social Interaction and Positive Emotion on Video-based Social Media Platforms</div>
+                <div class="publication-details">Chae, S. W., Alberta, M., & Lee, S. H. (Under Review). Entertainment Computing</div>
+            </div>
+
+            <h3>Recent Conference Presentations</h3>
+            <div class="publication">
+                <div class="publication-title">Trust in the Bylines: Audience Perceptions of AI-Generated News Across Polarized Issues</div>
+                <div class="publication-details">Moon, J., Lee, S. H. (2025, August). AEJMC Annual Conference, San Francisco, CA</div>
+            </div>
+
+            <div class="publication">
+                <div class="publication-title">How Hallyu/K-Lifestyle stays in your day-industrial insight</div>
+                <div class="publication-details">Lee, S. H. (2023, April). IKS Graduate Student Conference, Indiana University</div>
+            </div>
+        </section>
+
+        <section id="teaching">
+            <h2>Teaching Experience</h2>
+            
+            <div class="teaching-course">
+                <div class="course-header">
+                    <div class="course-title">Associate Instructor</div>
+                    <div class="course-details">
+                        <div><strong>Institution:</strong> The Media School, Indiana University</div>
+                        <div><strong>Period:</strong> Fall 2020 - Present</div>
+                    </div>
+                </div>
+                <p><strong>Courses Taught:</strong></p>
+                <ul style="margin-left: 2rem; margin-top: 0.5rem;">
+                    <li>MSCH-A305 Strategic Content Development</li>
+                    <li>MSCH-J360 Fashion, Beauty, and Lifestyle Media</li>
+                    <li>MSCH-C207 Introduction to Media Industry & Management</li>
+                    <li>MSCH-C208 Principles of Public Relations</li>
+                    <li>MSCH-C213 Media Psychology</li>
+                    <li>MSCH-C209 Introduction to Advertising and Integrated Marketing Communication</li>
+                </ul>
+            </div>
+
+            <div class="teaching-course">
+                <div class="course-header">
+                    <div class="course-title">Guest Lecturer</div>
+                    <div class="course-details">
+                        <div><strong>Institution:</strong> The Media School, Indiana University</div>
+                        <div><strong>Period:</strong> Spring 2021 - Fall 2024</div>
+                    </div>
+                </div>
+                <p><strong>Topic:</strong> "Fandom - a community of taste: how Korean-Entertainment content in your lifestyle"</p>
+                <p><strong>Courses:</strong></p>
+                <ul style="margin-left: 2rem; margin-top: 0.5rem;">
+                    <li>MSCH-J360 Fashion, Beauty, and Lifestyle Media (Multiple semesters)</li>
+                    <li>MSCH-J460 Social Media and Fashion, Beauty & Lifestyle</li>
+                    <li>MSCH-J326 Fashion, Beauty, and Lifestyle Media</li>
+                </ul>
+            </div>
+
+            <h3>Teaching Philosophy</h3>
+            <p>My teaching philosophy centers on bridging theoretical knowledge with practical application, drawing from my unique background in both academia and industry. I believe effective media education requires students to understand both the psychological foundations of communication and the real-world contexts in which these theories apply. In my courses, I integrate insights from media psychology research with contemporary examples from digital platforms, entertainment industries, and emerging technologies like AI. I strive to create inclusive learning environments where students can critically examine media processes while developing practical skills for the evolving media landscape.</p>
+        </section>
+
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            
+            <div class="cv-section">
+                <h3>Education</h3>
+                <div class="cv-item">
+                    <div class="cv-date">[Year]</div>
+                    <div><strong>Ph.D. in [Field]</strong>, [University Name]</div>
+                    <div>Dissertation: "[Dissertation Title]"</div>
+                    <div>Advisor: [Advisor Name]</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">[Year]</div>
+                    <div><strong>M.A. in [Field]</strong>, [University Name]</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">[Year]</div>
+                    <div><strong>B.A. in [Field]</strong>, [University Name]</div>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h3>Professional Experience</h3>
+                <div class="cv-item">
+                    <div class="cv-date">[Years]</div>
+                    <div><strong>[Position Title]</strong>, [Institution]</div>
+                    <div>Brief description of responsibilities and achievements</div>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h3>Awards and Honors</h3>
+                <div class="cv-item">
+                    <div class="cv-date">[Year]</div>
+                    <div><strong>[Award Name]</strong>, [Awarding Institution]</div>
+                </div>
+            </div>
+
+            <p><a href="#" style="color: #3498db; text-decoration: none;"><strong>Download Full CV (PDF)</strong></a></p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div>
+                    <h3>Email</h3>
+                    <p>sunghlee@iu.edu</p>
+                    
+                    <h3>Phone</h3>
+                    <p>775-360-0605</p>
+
+                    <h3>Research Labs</h3>
+                    <p>Mindless Electron Lab (MEL)<br>
+                    Computational Communication Lab (CCL)</p>
+                </div>
+                <div>
+                    <h3>Mailing Address</h3>
+                    <p>
+                        Sung Hyun Lee<br>
+                        The Media School<br>
+                        Indiana University<br>
+                        Bloomington, IN 47405<br>
+                        United States
+                    </p>
+
+                    <h3>Professional Networks</h3>
+                    <p>
+                        <a href="https://linkedin.com/in/lena-sunghyun-lee" style="color: var(--global-theme-color); text-decoration: none;">LinkedIn Profile</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#">Academia.edu</a>
+                <a href="#">ResearchGate</a>
+                <a href="#">ORCID</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Highlight active navigation item
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <style>
+        nav a.active {
+            background-color: #3498db;
+            color: white;
+        }
+    </style>
+</body>
+</html>
