@@ -1,4 +1,4 @@
-<div class="footer-content"> 
+<div class="footer-content">
             <div class="social-links">
                 <a href="https://linkedin.com/in/lena-sunghyun-lee"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 <a href="#"><i class="fas fa-graduation-cap"></i> Academia.edu</a>
@@ -608,6 +608,9 @@
             <p>Before pursuing my doctoral studies, I brought valuable industry experience from the Korean entertainment sector, where I worked as a strategic branding manager and designer for CJ ENM, focusing on user behavior analysis and storytelling. This unique combination of academic rigor and industry insight informs my research approach, allowing me to examine both theoretical frameworks and practical applications of communication technologies.</p>
 
             <p>My dissertation work explores collaborative dialogue with generative AI for problem-solving, contributing to our understanding of human-machine communication processes. I am actively seeking a tenure-track position where I can continue advancing knowledge in media psychology and human-AI interaction while mentoring the next generation of scholars in communication and media studies.</p>
+
+            <h3>Current Research Focus</h3>
+            <p>My research investigates how humans and artificial intelligence systems engage in collaborative problem-solving through sustained dialogue interactions. This work contributes to both theoretical understanding of human-machine communication and practical applications in educational and professional contexts.</p>
         </section>
 
         <section id="research">
@@ -822,6 +825,37 @@
     </footer>
 
     <script>
+        // Ensure page starts at the top
+        window.addEventListener('load', () => {
+            window.scrollTo(0, 0);
+        });
+
+        // Theme toggle functionality
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('theme-icon');
+            
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.className = 'fas fa-moon';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.className = 'fas fa-sun';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Load saved theme preference
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            const body = document.body;
+            const themeIcon = document.getElementById('theme-icon');
+            
+            body.setAttribute('data-theme', savedTheme);
+            themeIcon.className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        });
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
