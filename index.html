@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +6,7 @@
     <meta name="generator" content="">
     <title>Sung Hyun Lee - Media Psychology Researcher and Industrial Strategic Designer </title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css" rel="stylesheet">
     <style>
         :root {
             --global-bg-color: #ffffff;
@@ -136,6 +136,31 @@
         .contact-item i {
             color: var(--global-theme-color);
             width: 16px;
+        }
+
+        .academic-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .academic-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--global-theme-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--global-theme-color);
+            border-radius: 4px;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
+        }
+
+        .academic-link:hover {
+            background-color: var(--global-theme-color);
+            color: white;
         }
 
         nav {
@@ -345,6 +370,32 @@
             font-size: 0.9rem;
         }
 
+        .project-item {
+            background: var(--global-code-bg-color);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--global-theme-color);
+        }
+
+        .project-title {
+            font-weight: 600;
+            color: var(--global-text-color);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-details {
+            color: var(--global-text-color-light);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            color: var(--global-text-color);
+            line-height: 1.6;
+        }
+
         .social-links {
             display: flex;
             justify-content: center;
@@ -462,6 +513,10 @@
                 width: 40px;
                 height: 40px;
             }
+
+            .academic-links {
+                justify-content: center;
+            }
         }
 
         @media (max-width: 480px) {
@@ -504,6 +559,17 @@
                         <span><a href="https://linkedin.com/in/lena-sunghyun-lee" style="color: inherit; text-decoration: none;">LinkedIn</a></span>
                     </div>
                 </div>
+                <div class="academic-links">
+                    <a href="assets/pdf/CV_SUNGHYUNLEE_062025.pdf" target="_blank" class="academic-link" title="Download CV">
+                        <i class="fas fa-download"></i>
+                    </a>
+                    <a href="#" target="_blank" class="academic-link" title="Google Scholar">
+                        <i class="ai ai-google-scholar"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/lena-sunghyun-lee" target="_blank" class="academic-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -511,12 +577,9 @@
     <nav>
         <ul>
             <li><a href="#top">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#professional-projects">Professional Projects</a></li>
         </ul>
     </nav>
 
@@ -534,38 +597,8 @@
             <p>My research investigates how humans and artificial intelligence systems engage in collaborative problem-solving through sustained dialogue interactions. This work contributes to both theoretical understanding of human-machine communication and practical applications in educational and professional contexts.</p>
         </section>
 
-        <section id="research">
-            <h2>Research Interests</h2>
-            <div class="research-interests">
-                <div class="interest-card">
-                    <h3>Media Psychology</h3>
-                    <p>Investigating psychological processes underlying media consumption and user behavior in digital environments. My work examines how individuals perceive, process, and respond to various forms of media content, with particular attention to emotional responses and engagement patterns.</p>
-                </div>
-                <div class="interest-card">
-                    <h3>Human-Machine Communication</h3>
-                    <p>Exploring the dynamics of interaction between humans and artificial intelligence systems. I study how people communicate with AI entities, the factors that influence trust and acceptance, and the implications for collaborative problem-solving in various contexts.</p>
-                </div>
-                <div class="interest-card">
-                    <h3>Interactive Media & User Experience</h3>
-                    <p>Examining user experience design principles in interactive media platforms, including gaming, social media, and entertainment technologies. My research addresses how design choices influence user behavior and engagement across different platforms.</p>
-                </div>
-                <div class="interest-card">
-                    <h3>Entertainment Industry Studies</h3>
-                    <p>Analyzing communication patterns and user behaviors in entertainment contexts, particularly focusing on Korean pop culture (Hallyu), gaming platforms like Twitch, and cross-cultural media consumption patterns.</p>
-                </div>
-            </div>
-
-            <h3>Current Research Projects</h3>
-            <ul>
-                <li><strong>Human-AI Collaborative Dialogue:</strong> Investigating how users engage in problem-solving through collaborative dialogue with generative AI systems</li>
-                <li><strong>Trust in AI-Generated News:</strong> Examining audience perceptions of AI-generated news content across polarized issues (with J. Moon)</li>
-                <li><strong>Gaming Platform Communication:</strong> Analyzing linguistic behavior and social interaction patterns on streaming platforms like Twitch and YouTube</li>
-                <li><strong>Cross-Cultural Media Engagement:</strong> Studying the global impact of Korean entertainment content and lifestyle integration</li>
-            </ul>
-        </section>
-
         <section id="publications">
-            <h2>Selected Publications</h2>
+            <h2>Publications</h2>
             
             <h3>Peer-Reviewed Journal Articles</h3>
             <div class="publication">
@@ -658,101 +691,62 @@
             <p>My teaching philosophy centers on bridging theoretical knowledge with practical application, drawing from my unique background in both academia and industry. I believe effective media education requires students to understand both the psychological foundations of communication and the real-world contexts in which these theories apply. In my courses, I integrate insights from media psychology research with contemporary examples from digital platforms, entertainment industries, and emerging technologies like AI. I strive to create inclusive learning environments where students can critically examine media processes while developing practical skills for the evolving media landscape.</p>
         </section>
 
-        <section id="cv">
-            <h2>Curriculum Vitae</h2>
+        <section id="professional-projects">
+            <h2>Professional Projects</h2>
             
-                     <div class="cv-section">
-                <h3>Education</h3>
-                <div class="cv-item">
-                    <div class="cv-date">Aug 2022 - Present</div>
-                    <div class="cv-title">Ph.D. in The Media School</div>
-                    <div class="cv-institution">Indiana University, Bloomington, IN, USA</div>
-                    <div class="cv-description">
-                        Advisor: Dr. John A. Velez (The Media School, Chair) <br>
-                        Minor: Dr. Elizabeth Kaziunas (HCI/d in Luddy School of Informatics) <br>
-                        Committee: Dr. Andrew Weaver, Dr. Melanie A. Sarge (The Media School)<br>
-                        Dissertation Topic: TBD
-                    </div>
+            <div class="project-item">
+                <div class="project-title">CJ LIVE CITY Theme Park Development</div>
+                <div class="project-details">
+                    <strong>Role:</strong> Project Manager & CX Strategic Designer | <strong>Period:</strong> Oct 2015 - Jul 2020<br>
+                    <strong>Organization:</strong> CJ LIVE CITY, Seoul, Republic of Korea
                 </div>
-                <div class="cv-item">
-                    <div class="cv-date">Aug 2020 - Apr 2022</div>
-                    <div class="cv-title">M.A. in The Media School</div>
-                    <div class="cv-institution">Indiana University, Bloomington, IN, USA</div>
-                    <div class="cv-description">
-                        Thesis: "The effect of narrative structure and construal level on users' brand attitude and advocacy with credibility as a moderator on Instagram"<br>
-                        Committee: Dr. John A. Velez and Dr. Sung-Un Yang (Co-Chairs), Dr. Melanie A. Sarge
-                    </div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-date">Jan 2011 - Mar 2012</div>
-                    <div class="cv-title">MBA in the College of Business</div>
-                    <div class="cv-institution">Korea Advanced Institute of Science & Technology (KAIST), Seoul, ROK</div>
-                    <div class="cv-description">
-                        Program: Information Technology and Media Industry<br>
-                        Certificated the strategic entertainment and media management summer program in Marshall Business School, University of Southern California - Los Angeles, CA, USA
-                    </div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-date">Feb 2002 - Jul 2007</div>
-                    <div class="cv-title">B.A. in Mass Communication and Korean Literature (Double Major)</div>
-                    <div class="cv-institution">Sogang University, Seoul, ROK</div>
-                    <div class="cv-description">Exchange student program: University of Pennsylvania - Philadelphia, PA, USA</div>
+                <div class="project-description">
+                    Led a US$1.5 billion project to develop an innovative offline entertainment platform spanning 330,578m² of land. The project involved creating trans-platform connected experiences that seamlessly integrated online and offline entertainment through ride attractions and interactive technologies. Designed and managed budget allocation for innovative walk-through attractions that combined virtual reality with physical activity, creating immersive visitor experiences using advanced gamification methods. This project represented a groundbreaking approach to entertainment design, blending digital storytelling with physical space to create unprecedented user experiences.
                 </div>
             </div>
 
-            <div class="cv-section">
-                <h3>Professional Experience</h3>
-                <div class="cv-item">
-                    <div class="cv-date">Oct 2015 - Jul 2020</div>
-                    <div class="cv-title">Project Manager & CX Strategic Designer</div>
-                    <div class="cv-institution">CJ LIVE CITY, Seoul, Republic of Korea</div>
-                    <div class="cv-description">Led US$1.5 billion project to develop an offline entertainment platform on 330,578m2 of land. Designed trans-platform connected experiences from online to offline with ride attractions and managed budgets. Developed innovative walk-through attractions combining virtual reality with physical activity for immersive visitor experiences using gamification methods.</div>
+            <div class="project-item">
+                <div class="project-title">CJ Group Entertainment Ecosystem Branding Strategy</div>
+                <div class="project-details">
+                    <strong>Role:</strong> Sr. Brand Marketing Analyst | <strong>Period:</strong> Jan 2012 - Sep 2015<br>
+                    <strong>Organization:</strong> CJ Corporation, Seoul, Republic of Korea
                 </div>
-                <div class="cv-item">
-                    <div class="cv-date">Jan 2012 - Sep 2015</div>
-                    <div class="cv-title">Sr. Brand Marketing Analyst</div>
-                    <div class="cv-institution">CJ Corporation, Seoul, Republic of Korea</div>
-                    <div class="cv-description">Consulted branding strategies for CJ Group's entertainment business including 15 television channels, ten music labels, film investment & distribution, and multiplex movie theaters. Developed on-site branding strategy for KCON, the biggest Hallyu Convention & Show that expanded into eight countries.</div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-date">Oct 2007 - Jan 2011</div>
-                    <div class="cv-title">News Reporter</div>
-                    <div class="cv-institution">The Electronic Times, Seoul, Republic of Korea</div>
-                    <div class="cv-description">Built experience at Korea's most reputable daily newspaper focused on innovative economics and industry. Reported more than 3,500 short articles and 135 features. Specialized in investigative reporting on "Digital Aging" (2010) and "Election-Social media viral effect" (2009).</div>
+                <div class="project-description">
+                    Developed comprehensive branding strategies for CJ Group's extensive entertainment business portfolio, including 15 television channels, ten music labels, film investment & distribution, and multiplex movie theaters. Created and implemented the strategic branding framework for KCON, the world's largest Hallyu (Korean Wave) Convention & Show, successfully expanding the event to eight countries worldwide. This work involved deep analysis of cross-cultural media consumption patterns, audience behavior segmentation, and strategic positioning of Korean entertainment content in global markets. The project significantly contributed to the international expansion of the Korean entertainment industry.
                 </div>
             </div>
 
+            <div class="project-item">
+                <div class="project-title">Digital Media Innovation Research</div>
+                <div class="project-details">
+                    <strong>Role:</strong> News Reporter & Industry Analyst | <strong>Period:</strong> Oct 2007 - Jan 2011<br>
+                    <strong>Organization:</strong> The Electronic Times, Seoul, Republic of Korea
+                </div>
+                <div class="project-description">
+                    Conducted extensive investigative journalism and industry analysis at Korea's leading technology and innovation-focused daily newspaper. Produced over 3,500 short articles and 135 feature pieces, specializing in emerging technology trends and their societal impacts. Notable investigative projects included "Digital Aging" (2010), examining the psychological and social implications of rapid technological change on different demographic groups, and "Election-Social media viral effect" (2009), analyzing the impact of social media on political communication and voter behavior. This work provided foundational insights into the intersection of technology, media, and human behavior that continues to inform current research approaches.
+                </div>
+            </div>
+
+            <h3>Industry Impact and Recognition</h3>
+            <p>These professional projects have contributed significantly to understanding user behavior in entertainment contexts and have informed academic research in media psychology and human-computer interaction. The work at CJ Corporation directly influenced the global expansion of Korean entertainment content, while the theme park development project pioneered new approaches to immersive experience design that bridge digital and physical environments.</p>
+
             <div class="cv-section">
-                <h3>Awards and Honors</h3>
-                <div class="cv-item">
-                    <div class="cv-date">2025</div>
-                    <div class="cv-title">Kern Scholarship for Innovation in Journalism</div>
-                    <div class="cv-institution">Indiana University ($2,200)</div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-date">2024</div>
-                    <div class="cv-title">Cushman Memorial Fund & Top-rated admitted Ph.D. program</div>
-                    <div class="cv-institution">Indiana University ($500)</div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-date">2022-2027</div>
-                    <div class="cv-title">Scott C. Schurz Journalism Scholarship</div>
-                    <div class="cv-institution">Indiana University ($2,500)</div>
-                </div>
+                <h3>Awards and Professional Recognition</h3>
                 <div class="cv-item">
                     <div class="cv-date">2012</div>
                     <div class="cv-title">Research Analyst of the Month</div>
                     <div class="cv-institution">CJ Corporation, Seoul, Republic of Korea</div>
+                    <div class="cv-description">Recognized for exceptional strategic analysis and innovative branding solutions in entertainment industry research.</div>
                 </div>
                 <div class="cv-item">
                     <div class="cv-date">2008, 2010</div>
                     <div class="cv-title">Reporter of the Month (twice)</div>
                     <div class="cv-institution">The Electronic Times, Seoul, Republic of Korea</div>
+                    <div class="cv-description">Awarded for outstanding investigative journalism and industry analysis in technology and digital media sectors.</div>
                 </div>
             </div>
-
-           <p style="margin-top: 2rem;"><a href="assets/pdf/CV_SUNGHYUNLEE_062025.pdf" target="_blank" style="color: var(--global-theme-color); text-decoration: none; font-weight: 600;"><i class="fas fa-download"></i> Download Full CV (PDF)</a></p>
         </section>
+
         <section id="contact">
             <h2>Contact Information</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
@@ -791,7 +785,7 @@
                 <a href="#">LinkedIn</a>
                 <a href="#">Twitter</a>
             </div>
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2025 Sung Hyun Lee. All rights reserved.</p>
         </div>
     </footer>
 
@@ -904,6 +898,8 @@
             document.querySelectorAll('nav a').forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                } else if ((current === 'about' || current === '') && link.getAttribute('href') === '#top') {
                     link.classList.add('active');
                 }
             });
