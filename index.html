@@ -422,11 +422,12 @@
         }
 
         footer {
-            background: var(--global-footer-bg-color);
-            color: var(--global-footer-text-color);
+            background: var(--global-bg-color);
+            color: var(--global-text-color);
             text-align: center;
             padding: 3rem 0;
             margin-top: 4rem;
+            border-top: 1px solid var(--global-divider-color);
         }
 
         .footer-content {
@@ -559,16 +560,15 @@
                         <span><a href="https://linkedin.com/in/lena-sunghyun-lee" style="color: inherit; text-decoration: none;">LinkedIn</a></span>
                     </div>
                 </div>
-                <div class="academic-links">
-                    <a href="assets/pdf/CV_SUNGHYUNLEE_062025.pdf" target="_blank" class="academic-link" title="Download CV">
+                <div class="contact-info">
+                    <div class="contact-item">
                         <i class="fas fa-download"></i>
-                    </a>
-                    <a href="#" target="_blank" class="academic-link" title="Google Scholar">
+                        <span><a href="assets/pdf/CV_SUNGHYUNLEE_062025.pdf" target="_blank" style="color: inherit; text-decoration: none;">Download CV</a></span>
+                    </div>
+                    <div class="contact-item">
                         <i class="ai ai-google-scholar"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/lena-sunghyun-lee" target="_blank" class="academic-link" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+                        <span><a href="#" target="_blank" style="color: inherit; text-decoration: none;">Google Scholar</a></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -580,6 +580,7 @@
             <li><a href="#publications">Publications</a></li>
             <li><a href="#teaching">Teaching</a></li>
             <li><a href="#professional-projects">Professional Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -778,13 +779,6 @@
 
     <footer>
         <div class="container">
-            <div class="social-links">
-                <a href="#">Academia.edu</a>
-                <a href="#">ResearchGate</a>
-                <a href="#">ORCID</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Twitter</a>
-            </div>
             <p>&copy; 2025 Sung Hyun Lee. All rights reserved.</p>
         </div>
     </footer>
