@@ -305,6 +305,11 @@
             color: var(--global-text-color);
             font-size: 0.95rem;
             line-height: 1.6;
+            margin-top: 0.8rem;
+            padding: 1rem;
+            background: var(--global-bg-color);
+            border-radius: 4px;
+            border-left: 3px solid var(--global-theme-color);
         }
 
         .cv-section {
@@ -467,6 +472,22 @@
             --global-divider-color: #404040;
         }
 
+        /* Style for clickable abstract toggles */
+        .abstract-toggle {
+            color: var(--global-theme-color);
+            text-decoration: underline;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font: inherit;
+            padding: 0;
+            margin-left: 1rem;
+        }
+
+        .abstract-toggle:hover {
+            color: var(--global-hover-color);
+        }
+
         @media (max-width: 768px) {
             .profile-content {
                 flex-direction: column;
@@ -609,7 +630,7 @@
                 <div class="publication-links" style="margin-bottom: 0.8rem;">
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin-right: 1rem;">pdf</a> |
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin: 0 1rem;">website</a> |
-                    <a href="#" onclick="toggleAbstract('abstract1')" style="color: var(--global-theme-color); text-decoration: underline; margin-left: 1rem; cursor: pointer;">nutshell description</a>
+                    <button class="abstract-toggle" onclick="toggleAbstract('abstract1')">nutshell description</button>
                 </div>
                 <div id="abstract1" class="publication-abstract" style="display: none;">This study investigates how users engage in collaborative problem-solving through dialogue with generative AI systems, moving beyond simple prompt engineering to examine sustained interactive communication patterns. We provide recommendations for both researchers and users of AI systems.</div>
             </div>
@@ -621,7 +642,7 @@
                 <div class="publication-links" style="margin-bottom: 0.8rem;">
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin-right: 1rem;">pdf</a> |
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin: 0 1rem;">website</a> |
-                    <a href="#" onclick="toggleAbstract('abstract2')" style="color: var(--global-theme-color); text-decoration: underline; margin-left: 1rem; cursor: pointer;">nutshell description</a>
+                    <button class="abstract-toggle" onclick="toggleAbstract('abstract2')">nutshell description</button>
                 </div>
                 <div id="abstract2" class="publication-abstract" style="display: none;">Examines how perceptions of trolling motivations influence vigilante behaviors in gaming environments, contributing to understanding of online community dynamics and user behavior patterns in digital spaces.</div>
             </div>
@@ -633,7 +654,7 @@
                 <div class="publication-links" style="margin-bottom: 0.8rem;">
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin-right: 1rem;">pdf</a> |
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin: 0 1rem;">website</a> |
-                    <a href="#" onclick="toggleAbstract('abstract3')" style="color: var(--global-theme-color); text-decoration: underline; margin-left: 1rem; cursor: pointer;">nutshell description</a>
+                    <button class="abstract-toggle" onclick="toggleAbstract('abstract3')">nutshell description</button>
                 </div>
                 <div id="abstract3" class="publication-abstract" style="display: none;">Analyzes patterns of cross-cutting political discussions in YouTube comment sections, comparing engagement across different content types and creators to understand political discourse in digital media environments.</div>
             </div>
@@ -645,7 +666,7 @@
                 <div class="publication-links" style="margin-bottom: 0.8rem;">
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin-right: 1rem;">pdf</a> |
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin: 0 1rem;">website</a> |
-                    <a href="#" onclick="toggleAbstract('abstract4')" style="color: var(--global-theme-color); text-decoration: underline; margin-left: 1rem; cursor: pointer;">nutshell description</a>
+                    <button class="abstract-toggle" onclick="toggleAbstract('abstract4')">nutshell description</button>
                 </div>
                 <div id="abstract4" class="publication-abstract" style="display: none;">Investigates emotional sharing and community building on Twitch during the COVID-19 pandemic, revealing how gaming platforms served as emotional support systems and fostered social connection during isolation.</div>
             </div>
@@ -658,7 +679,7 @@
                 <div class="publication-links" style="margin-bottom: 0.8rem;">
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin-right: 1rem;">pdf</a> |
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin: 0 1rem;">website</a> |
-                    <a href="#" onclick="toggleAbstract('abstract5')" style="color: var(--global-theme-color); text-decoration: underline; margin-left: 1rem; cursor: pointer;">nutshell description</a>
+                    <button class="abstract-toggle" onclick="toggleAbstract('abstract5')">nutshell description</button>
                 </div>
                 <div id="abstract5" class="publication-abstract" style="display: none;">Examines the relationship between streamer gender identity and audience linguistic patterns, contributing to understanding of gendered communication in digital entertainment spaces.</div>
             </div>
@@ -670,7 +691,7 @@
                 <div class="publication-links" style="margin-bottom: 0.8rem;">
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin-right: 1rem;">pdf</a> |
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin: 0 1rem;">website</a> |
-                    <a href="#" onclick="toggleAbstract('abstract6')" style="color: var(--global-theme-color); text-decoration: underline; margin-left: 1rem; cursor: pointer;">nutshell description</a>
+                    <button class="abstract-toggle" onclick="toggleAbstract('abstract6')">nutshell description</button>
                 </div>
                 <div id="abstract6" class="publication-abstract" style="display: none;">Compares user engagement and emotional responses across live and asynchronous video platforms, examining how temporal synchronicity affects social interaction and user experience in digital media consumption.</div>
             </div>
@@ -683,7 +704,7 @@
                 <div class="publication-links" style="margin-bottom: 0.8rem;">
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin-right: 1rem;">pdf</a> |
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin: 0 1rem;">website</a> |
-                    <a href="#" onclick="toggleAbstract('abstract7')" style="color: var(--global-theme-color); text-decoration: underline; margin-left: 1rem; cursor: pointer;">nutshell description</a>
+                    <button class="abstract-toggle" onclick="toggleAbstract('abstract7')">nutshell description</button>
                 </div>
                 <div id="abstract7" class="publication-abstract" style="display: none;">Investigates audience trust and credibility perceptions of AI-generated news content, particularly examining how political polarization affects acceptance of automated journalism across different ideological perspectives.</div>
             </div>
@@ -695,7 +716,7 @@
                 <div class="publication-links" style="margin-bottom: 0.8rem;">
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin-right: 1rem;">pdf</a> |
                     <a href="#" style="color: var(--global-theme-color); text-decoration: underline; margin: 0 1rem;">website</a> |
-                    <a href="#" onclick="toggleAbstract('abstract8')" style="color: var(--global-theme-color); text-decoration: underline; margin-left: 1rem; cursor: pointer;">nutshell description</a>
+                    <button class="abstract-toggle" onclick="toggleAbstract('abstract8')">nutshell description</button>
                 </div>
                 <div id="abstract8" class="publication-abstract" style="display: none;">Explores the integration of Korean cultural content and lifestyle practices in daily routines of global consumers, drawing from industry experience to analyze the sustainable impact of Hallyu beyond entertainment consumption.</div>
             </div>
@@ -965,7 +986,7 @@
             });
         });
 
-        // Toggle abstract visibility
+        // Toggle abstract visibility - FIXED VERSION
         function toggleAbstract(abstractId) {
             const abstract = document.getElementById(abstractId);
             if (abstract.style.display === 'none' || abstract.style.display === '') {
